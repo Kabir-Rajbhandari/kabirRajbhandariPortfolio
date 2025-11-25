@@ -754,3 +754,80 @@ section .fa-github:hover {
   box-shadow: 0px 0px 10px var(--border-color);
   border: none;
 }
+
+/* footer section */
+footer {
+  position: relative;
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d62976;
+  padding: 0px 10%;
+  margin: 2%;
+}
+
+footer .section_divisor {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .section_intro h1 {
+  font-family: "Play Write", "Times New Roman", Times, serif;
+  font-size: 1.1em;
+  background: transparent;
+  margin: 3% 0;
+}
+
+footer .section_intro {
+  width: 500px;
+  height: fit-content;
+}
+
+footer .section_divisor p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  opacity: 0.6;
+  letter-spacing: 1.5px;
+  word-spacing: 0.4px;
+  text-align: justify;
+}
+
+footer h3 {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: bolder;
+  letter-spacing: 1.4px;
+  word-spacing: 0px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  text-align: start;
+  margin: 3% 0 0 0;
+}
+
+footer a {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 15px;
+  opacity: 0.7;
+  position: relative;
+}
+
+footer a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
