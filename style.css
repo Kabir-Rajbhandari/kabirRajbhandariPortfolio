@@ -51,14 +51,14 @@ nav {
   height: 55px;
   width: 100%;
   padding: 0 10px;
-  box-shadow: 0 3px 10px rgba(103, 103, 103, 0.4);
+  box-shadow: 0 1px 4px rgba(103, 103, 103, 0.4);
   position: fixed;
   z-index: 99;
 }
 
 #logo {
   position: absolute;
-  left: 20px;
+  left: 55px;
 }
 
 #logo a {
@@ -72,7 +72,7 @@ nav {
   width: auto;
   height: auto;
   position: absolute;
-  left: 900px;
+  right: 40px;
 }
 
 #nav_container ul {
@@ -126,7 +126,7 @@ nav {
 section {
   height: auto;
   width: auto;
-  padding: 5px 15px;
+  padding: 5px 3.5%;
 }
 
 .fa-computer-mouse {
@@ -154,6 +154,7 @@ section {
 }
 
 #profile__container {
+  position: fixed;
   margin-top: 0.5%;
   height: 90vh;
   width: 100%;
@@ -177,7 +178,7 @@ section {
   position: relative;
   width: 300px;
   border: 4px solid white;
-  border-radius: 100%;
+  border-radius: 30px;
   overflow: hidden;
   transition: all ease-in-out linear;
   animation-name: profileAnimator;
@@ -191,7 +192,7 @@ section {
   height: 390px;
   bottom: 0.1px;
   width: auto;
-  left: 3px;
+  left: 0px;
   object-fit: cover;
   object-position: center;
 }
@@ -237,6 +238,7 @@ section {
 }
 
 section .desc__wrapper {
+  position: relative;
   margin-top: 20px;
   backdrop-filter: blur(10px);
   width: auto;
@@ -245,12 +247,12 @@ section .desc__wrapper {
   background: rgba(255, 255, 255, 0.289);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px); /* For Safari */
-  box-shadow: 4px 5px 10px rgba(255, 255, 255, 0.608);
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.927);
 }
 
 section h1 {
   font-family: "Space Nova", "Times New Roman", Times, serif;
-  font-size: 3em;
+  font-size: 2.3em;
   letter-spacing: 2px;
   color: var(--font-color);
   word-spacing: 0.4px;
@@ -267,7 +269,7 @@ section h1 {
 section h2 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
   text-align: center;
   letter-spacing: 1px;
   font-weight: bold;
@@ -280,7 +282,7 @@ section h3 {
   text-align: center;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  font-size: 1.3em;
+  font-size: 1.1em;
   word-spacing: 0.5px;
   letter-spacing: 1px;
 }
@@ -305,7 +307,7 @@ section .socialIcons li {
 }
 
 section .fa-brands {
-  font-size: 25px;
+  font-size: 22px;
   background: none;
 }
 
@@ -326,7 +328,7 @@ section .buttons input {
   margin: 1% 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 0.5px;
   border: none;
 }
@@ -344,6 +346,7 @@ section #downloadBtn {
 }
 
 section #downloadBtn:hover {
+  transform: scale3d(1.02, 1.02, 1);
   opacity: 1;
 }
 
@@ -360,6 +363,7 @@ section #hireBtn {
 }
 
 section #hireBtn:hover {
+  transform: scale3d(1.02, 1.02, 1);
   opacity: 1;
 }
 
@@ -392,7 +396,7 @@ section .fa-github:hover {
 }
 
 #about__container {
-  height: 100vh;
+  height: auto;
   width: 100%;
 }
 
@@ -400,7 +404,7 @@ section .fa-github:hover {
 
 #about__container {
   display: flex;
-  margin: 3% 0;
+  margin: 2% 0 0 0;
   flex-direction: row;
   max-width: 100%;
   position: relative;
@@ -410,11 +414,11 @@ section .fa-github:hover {
   flex-wrap: wrap;
   color: var(--font-color);
   align-items: start;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 #about__container .section_about {
-  width: 100vh;
+  width: 65%;
   position: relative;
 }
 
@@ -462,7 +466,7 @@ section .fa-github:hover {
   width: 400px;
   display: flex;
   position: relative;
-  margin: 10px 0 0 0;
+  margin: 3px 0 0 0;
 }
 
 #about__container .containers .descrip {
@@ -479,11 +483,10 @@ section .fa-github:hover {
 
 #about__container .triplet__container {
   cursor: pointer;
-  gap: 20px;
+  gap: 30px;
   align-items: center;
-  justify-content: center;
-  width: fit-content;
-  height: fit-content;
+  width: auto;
+  height: auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -494,26 +497,27 @@ section .fa-github:hover {
   height: fit-content;
   position: relative;
   display: flex;
-  gap: 50px;
+  gap: 130px;
   flex-direction: row;
 }
 #about__container .container_one {
   align-content: center;
+  border-radius: 14px;
   justify-items: center;
   overflow: hidden;
   padding: 2px 8px;
   text-align: left;
   height: 120px;
   width: auto;
-  border-radius: 0;
   box-sizing: border-box;
   transition: all ease-in-out 2s linear;
   position: relative;
 }
 
 #about__container .container_one:hover {
-  border-radius: 8px;
-  box-shadow: 0px 0px 15px var(--border-color);
+  transform: scale3d(1.01, 1.01, 1);
+  inset: inherit;
+  box-shadow: 0px 2px 8px rgba(187, 187, 187, 0.826);
 }
 
 #about__container .container_one p {
@@ -565,14 +569,16 @@ section .fa-github:hover {
   height: 120px;
   width: auto;
   border-radius: 0;
+  border-radius: 14px;
   box-sizing: border-box;
   transition: all ease-in-out 2s linear;
   position: relative;
 }
 
 #about__container .container_two:hover {
-  border-radius: 8px;
-  box-shadow: 0px 0px 15px var(--border-color);
+  transform: scale3d(1.01, 1.01, 1);
+  inset: inherit;
+  box-shadow: 0px 2px 8px rgba(187, 187, 187, 0.826);
 }
 
 #about__container .container_two p {
@@ -625,13 +631,15 @@ section .fa-github:hover {
   width: auto;
   border-radius: 0;
   box-sizing: border-box;
-  transition: all ease-in-out 2s linear;
+  transition: all ease-in-out 2.5s linear;
+  border-radius: 14px;
   position: relative;
 }
 
 #about__container .container_three:hover {
-  border-radius: 8px;
-  box-shadow: 0px 0px 15px var(--border-color);
+  transform: scale3d(1.01, 1.01, 1);
+  inset: inherit;
+  box-shadow: 0px 2px 8px rgba(187, 187, 187, 0.826);
 }
 
 #about__container .container_three p {
@@ -718,7 +726,7 @@ section .fa-github:hover {
 }
 
 #projects__wrapper p {
-  margin: 1.5% 0;
+  margin: 1% 0 2% 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 16px;
@@ -755,6 +763,268 @@ section .fa-github:hover {
   border: none;
 }
 
+/* skills section */
+.skills {
+  height: 100vh;
+  padding: 5px 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills h2 {
+  text-align: center;
+  text-transform: uppercase;
+  display: inline;
+  font-size: 2em;
+  font-family: "Space Nova", "Times New Roman", Times, serif;
+  color: var(--border-color);
+  margin: 1% 0;
+  position: relative;
+  letter-spacing: 1px;
+  word-spacing: 0.5px;
+}
+
+.skills h2::before {
+  opacity: 0.4;
+  border-radius: 100%;
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  background-color: var(--border-color);
+  height: 3px;
+}
+
+.skills p {
+  margin: 1% 0 2% 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
+  opacity: 0.7;
+  letter-spacing: 1px;
+  word-spacing: 0.4px;
+}
+
+/* get in touch section */
+
+.getInTouch {
+  height: fit-content;
+  padding: 5px 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2%;
+  justify-content: center;
+}
+
+.getInTouch h2 {
+  text-align: center;
+  text-transform: uppercase;
+  display: inline;
+  font-size: 2em;
+  font-family: "Space Nova", "Times New Roman", Times, serif;
+  color: var(--border-color);
+  margin: 1% 0;
+  position: relative;
+  letter-spacing: 1px;
+  word-spacing: 0.5px;
+}
+
+.getInTouch h2::before {
+  opacity: 0.4;
+  border-radius: 100%;
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  background-color: var(--border-color);
+  height: 3px;
+}
+
+.getInTouch p {
+  margin: 1% 0 2% 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
+  opacity: 0.7;
+  letter-spacing: 1px;
+  word-spacing: 0.4px;
+}
+
+.getInTouch .other_info {
+  text-align: center;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+  margin: 1% 0 3% 0;
+}
+
+.getInTouch .other_info .wrappers {
+  cursor: pointer;
+  align-content: center;
+  border: none;
+  box-shadow: 0px 0px 2px var(--font-color);
+  height: 150px;
+  width: 280px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  transition: all ease-in 1.4s linear;
+}
+
+.getInTouch .other_info .wrappers:hover {
+  inset: inherit;
+  box-shadow: 0px 2px 8px rgba(187, 187, 187, 0.826);
+  transform: scale3d(1.01, 1.01, 1);
+}
+
+.getInTouch .other_info h4 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 0.4px;
+  font-size: 1em !important;
+  color: var(--font-color);
+  margin: 5% 0;
+}
+
+.getInTouch .other_info .fa-solid {
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  color: var(--background-color);
+  background-color: var(--border-color);
+  height: 40px;
+  text-align: center;
+  width: 40px;
+  align-content: center;
+}
+
+.getInTouch .other_info p {
+  margin: 1% 0 2% 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 14px;
+  opacity: 0.7;
+  letter-spacing: 1px;
+  word-spacing: 0.4px;
+}
+
+form fieldset {
+  width: 900px;
+  height: fit-content;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: var(--font-color);
+  padding: 3.5%;
+  border-radius: 12px;
+  font-size: 15px;
+  word-spacing: 0.4px;
+  border: none;
+  box-shadow: 0px 0px 20px var(--border-color);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+form .name,
+.email,
+.subject,
+.message {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+form .hor_form {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  flex-direction: row;
+}
+
+form .subject,
+.message {
+  width: 100%;
+  height: fit-content;
+}
+form input {
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 1px;
+  word-spacing: 0.4px;
+  font-size: 15px;
+  outline: none;
+  transition: all ease-in-out 2s linear;
+  width: 350px;
+  padding: 12px 10px;
+  border-radius: 4px;
+  border: 2px solid rgba(189, 189, 189, 0.5);
+  opacity: 0.6;
+}
+
+form .subject input {
+  width: 100%;
+}
+form textarea {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  outline: none;
+  letter-spacing: 1px;
+  word-spacing: 0.4px;
+  transition: all ease-in-out 2s linear;
+  width: 100%;
+  height: 150px;
+  padding: 12px 10px;
+  border-radius: 4px;
+  border: 2px solid rgba(189, 189, 189, 0.5);
+  opacity: 0.6;
+}
+
+form input:focus {
+  opacity: 1;
+  border: 2px solid transparent;
+  box-shadow: 0px 0px 5px var(--border-color);
+}
+
+form textarea:focus {
+  opacity: 1;
+  border: 2px solid transparent;
+  box-shadow: 0px 0px 5px var(--border-color);
+}
+
+form #submitBtn {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: var(--background-color);
+  background: linear-gradient(40deg, var(--border-color), rgb(146, 241, 203));
+  opacity: 0.7;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  word-spacing: 0.4px;
+  text-transform: capitalize;
+  width: 200px;
+  transition: all ease-in-out 0.4s linear;
+}
+
+form #submitBtn:hover {
+  opacity: 1;
+  box-shadow: 0px 0px 15px var(--border-color);
+  transform: scale3d(1.02, 1.02, 1);
+}
+
 /* footer section */
 footer {
   position: relative;
@@ -762,10 +1032,14 @@ footer {
   width: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background-color: #d62976;
-  padding: 0px 10%;
-  margin: 2%;
+  gap: 8px;
+  padding: 0.3% 3.5%;
+  border-radius: 4px;
+  box-shadow: 0px 0px 3px rgba(103, 103, 103, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 footer .section_divisor {
@@ -773,7 +1047,7 @@ footer .section_divisor {
   width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
 }
 
@@ -781,11 +1055,12 @@ footer .section_intro h1 {
   font-family: "Play Write", "Times New Roman", Times, serif;
   font-size: 1.1em;
   background: transparent;
-  margin: 3% 0;
+  cursor: pointer;
+  margin: 0 0 3% 0;
 }
 
 footer .section_intro {
-  width: 500px;
+  width: 450px;
   height: fit-content;
 }
 
@@ -799,35 +1074,111 @@ footer .section_divisor p {
 }
 
 footer h3 {
-  text-align: center;
+  text-align: start;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 1.2em;
   font-weight: bolder;
-  letter-spacing: 1.4px;
+  letter-spacing: 1px;
   word-spacing: 0px;
+  margin-bottom: 10px;
 }
 
 footer ul {
   list-style: none;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 footer li {
+  margin: 1px 0;
+  position: relative;
   text-align: start;
-  margin: 3% 0 0 0;
 }
 
-footer a {
+footer .section_links {
+  width: 200px;
+}
+
+footer .section_links a {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  font-size: 15px;
   opacity: 0.7;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  transition: all ease-in-out 0.25s;
   position: relative;
 }
 
-footer a::before {
-  content: "";
+footer .section_links a::before {
   position: absolute;
-  bottom: 0;
+  content: "";
+  bottom: -3px;
   left: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--border-color);
+  border-radius: 20px;
+  transition: all ease-in-out 0.25s;
+}
+
+footer .section_links a:hover {
+  opacity: 1;
+}
+
+footer .section_links a:hover::before {
+  width: 100%;
+  opacity: 1;
+}
+
+footer .section_connect {
+  width: 200px;
+  position: relative;
+}
+
+footer .section_connect ul {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+footer .section_connect a {
+  font-size: 25px;
+  background: transparent;
+  opacity: 0.6;
+  transition: all ease-in-out 1s linear;
+}
+
+footer .section_connect .fa-linkedin:hover {
+  color: #1877f2;
+  opacity: 1;
+}
+
+footer .section_connect .fa-github:hover {
+  color: #000000;
+  opacity: 1;
+}
+
+footer .section_connect .fa-envelope:hover {
+  color: #d62976;
+  opacity: 1;
+}
+
+footer .line__breaker {
+  height: 1px;
+  width: 100%;
+  background-color: var(--border-color);
+}
+
+footer .copyright {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  opacity: 0.8;
+  background: tran;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 0.5px;
+  word-spacing: 0.3px;
 }

@@ -30,7 +30,7 @@
             <li><a href="#projects" draggable="false">Projects</a></li>
             <li><a href="#" draggable="false">Education</a></li>
             <li><a href="#" draggable="false">Portfolio</a></li>
-            <li><a href="#footer" draggable="false">Contact</a></li>
+            <li><a href="#" draggable="false">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -103,7 +103,9 @@
           </div>
         </div>
       </div>
+    </section>
 
+    <section>
       <div id="about__container">
         <div class="section_about">
           <h2 id="AboutMe">About Me</h2>
@@ -195,10 +197,93 @@
         </div>
       </div>
     </section>
+
+    <section>
+      <div class="skills">
+        <h2 id="skills">Skills</h2>
+        <p>Technologies and tools I work with to bring ideas to life</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="getInTouch">
+        <h2 id="getIn">Get In Touch</h2>
+        <p>
+          Have a project in mind? Let's work together to create something
+          amazing
+        </p>
+        <div class="other_info">
+          <div class="wrappers">
+            <i class="fa-solid fa-envelope"></i>
+            <h4>Email</h4>
+            <p>rajbhandarikabir814@gmail.com</p>
+          </div>
+          <div class="wrappers">
+            <i class="fa-solid fa-phone"></i>
+            <h4>Phone</h4>
+            <p>+977 9876543210</p>
+          </div>
+          <div class="wrappers">
+            <i class="fa-solid fa-location-arrow"></i>
+            <h4>Location</h4>
+            <p>Boudha, Kathmandu</p>
+          </div>
+        </div>
+        <form action="#" method="post">
+          <fieldset>
+            <legend></legend>
+            <div class="hor_form">
+              <div class="name">
+                <label for="name">Full Name</label>
+                <input type="text" value="" id="name" />
+              </div>
+              <div class="email">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  value=""
+                  id="email"
+                  placeholder="someone@gmail.com"
+                />
+              </div>
+            </div>
+
+            <div class="subject">
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                value=""
+                id="subject"
+                placeholder="What's this for ?"
+              />
+            </div>
+
+            <div class="message">
+              <label for="for-message">Message</label>
+              <textarea
+                name="message"
+                id="user_message"
+                aria-label="for-message"
+                placeholder="Tell me about your project..."
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              aria-label="submit__btn"
+              value="submit"
+              id="submitBtn"
+            />
+          </fieldset>
+        </form>
+      </div>
+    </section>
     <footer>
       <div class="section_divisor">
         <div class="section_intro">
-          <h1 id="kabir_logo">Kabir Rajbhandari</h1>
+          <a href="index.html">
+            <h1 id="kabir_logo">Kabir Rajbhandari</h1>
+          </a>
+
           <p>
             Full Stack Developer & UI/UX Designer passionate about creating
             exceptional digital experiences.
@@ -213,7 +298,7 @@
             <li><a href="#">Contact</a></li>
           </ul>
         </div>
-        <div class="sections_connect">
+        <div class="section_connect">
           <h3>Connect</h3>
           <ul>
             <li>
@@ -240,8 +325,12 @@
           </ul>
         </div>
       </div>
+      <span class="line__breaker"></span>
       <div class="copyright">
-        <p></p>
+        <p>
+          <i class="fa-regular fa-copyright"></i> 2025 <b>Kabir Rajbhandari</b>.
+          Made with <span>&#9829;</span> and lots of coffee.
+        </p>
       </div>
     </footer>
   </body>
