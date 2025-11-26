@@ -26,11 +26,11 @@
         <div id="nav_container">
           <ul>
             <li><a href="#AboutMe" draggable="false">About</a></li>
-            <li><a href="#" draggable="false">Skills</a></li>
+            <li><a href="#skills" draggable="false">Skills</a></li>
             <li><a href="#projects" draggable="false">Projects</a></li>
             <li><a href="#" draggable="false">Education</a></li>
             <li><a href="#" draggable="false">Portfolio</a></li>
-            <li><a href="#" draggable="false">Contact</a></li>
+            <li><a href="#getIn" draggable="false">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -184,15 +184,69 @@
     <section id="projects__wrapper">
       <div class="projects">
         <h2 id="projects">Featured Projects</h2>
-        <p>
+        <p id="desc__pro">
           A selection of my recent work that showcases my skills and passion
         </p>
-        <div class="projects__display">
-          <div class="display_pro">
-            <h3>Projects One Display Here</h3>
+        <div class="main_container">
+          <div class="outer_container">
+            <div class="inner_container">
+              <h3>01</h3>
+              <img
+                src="/image-container/nature-3082832_1280.jpg"
+                alt="project one"
+              />
+              <div class="descrip">
+                <p>
+                  A clean, stylish clothing website built with modern front-end
+                  design to showcase fashion effortlessly.
+                </p>
+                <div class="btns">
+                  <button id="code_btn">
+                    Code
+                    <i class="fa-brands fa-github"></i>
+                  </button>
+                  <button id="demo_btn">Demo</button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="display_pro">
-            <h3>Projects Two Display Here</h3>
+          <div class="outer_container">
+            <div class="inner_container">
+              <h3>02</h3>
+              <img src="/image-container/hotelAngel.png" alt="project two" />
+              <div class="descrip">
+                <p>
+                  Clean, modern desktop UI in Figma with intuitive navigation
+                  and elegant room booking layout.
+                </p>
+                <div class="btns">
+                  <button id="code_btn">
+                    Code
+                    <i class="fa-brands fa-github"></i>
+                  </button>
+                  <button id="demo_btn">Demo</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="outer_container">
+            <div class="inner_container">
+              <h3>03</h3>
+              <img src="/image-container/Dashboard.png" alt="project three" />
+              <div class="descrip">
+                <p>
+                  Sleek, modern desktop dashboard UI in Figma with intuitive
+                  navigation and clear data visualization.
+                </p>
+                <div class="btns">
+                  <button id="code_btn">
+                    Code
+                    <i class="fa-brands fa-github"></i>
+                  </button>
+                  <button id="demo_btn">Demo</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -202,6 +256,29 @@
       <div class="skills">
         <h2 id="skills">Skills</h2>
         <p>Technologies and tools I work with to bring ideas to life</p>
+        <div class="slider">
+          <div class="tools_wrapper">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css"></i>
+            <i class="fa-brands fa-figma"></i>
+            <i class="fa-brands fa-js"></i>
+            <i class="fa-brands fa-java"></i>
+            <i class="fa-brands fa-python"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-react"></i>
+
+            <!-- duplicate items -->
+
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css"></i>
+            <i class="fa-brands fa-figma"></i>
+            <i class="fa-brands fa-js"></i>
+            <i class="fa-brands fa-java"></i>
+            <i class="fa-brands fa-python"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-react"></i>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -235,12 +312,13 @@
             <div class="hor_form">
               <div class="name">
                 <label for="name">Full Name</label>
-                <input type="text" value="" id="name" />
+                <input required type="text" value="" id="name" />
               </div>
               <div class="email">
                 <label for="email">Email</label>
                 <input
                   type="email"
+                  required
                   value=""
                   id="email"
                   placeholder="someone@gmail.com"
@@ -252,6 +330,7 @@
               <label for="subject">Subject</label>
               <input
                 type="text"
+                required
                 value=""
                 id="subject"
                 placeholder="What's this for ?"
@@ -261,6 +340,7 @@
             <div class="message">
               <label for="for-message">Message</label>
               <textarea
+                required
                 name="message"
                 id="user_message"
                 aria-label="for-message"
